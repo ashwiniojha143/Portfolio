@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1 class="Logo">Ashwini.</h1>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="https://drive.google.com/file/d/1Le7RjyuMj5yd8L1TWs5cF6_vA7GrS0eA/view?usp=drive_link">About</a>
+            <a href="https://drive.google.com/file/d/1Rvf9hKzO0u8PiDNM7L8mUOJwU079THp5/view?usp=drive_link">Skills</a>
+            <a href="https://github.com/ashwiniojha143?tab=repositories">Projects</a>
+        </nav>
+    </header>
+    <div class="text-box">
+        <h1>Ashwini Ojha</h1>
+        <h1>
+            <!-- <span class="skills">Frontend Developer</span> -->
+            <!-- delete these below line  -->
+            <div class="container">
+                <span class="text first-text">I'm a</span>
+                <span class="text sec-text"></span>
+            </div>
+            <!-- delete above line if wrong -->
+        </h1>
+        <!-- delete these below line  -->
+        <script>
+            const text = document.querySelector(".sec-text");
+
+            const textload = () => {
+                setTimeout(() => {
+                    text.textContent = "Web-Developer";
+                }, 0);
+                setTimeout(() => {
+                    text.textContent = "Graphic Designer";
+                }, 5000);
+                setTimeout(() => {
+                    text.textContent = "UI / UX Designer";
+                }, 10000);
+            }
+
+            textload();
+            setInterval(textload,15000);
+        </script>
+        <!-- delete above line if wrong -->
+        <p>Greetings! I'm Ashwini Kr. Ojha, a dynamic and motivated student with 2 years of hands-on experience in web development and design, excelling in HTML, CSS, JavaScript, Java, DSA, MySQL, Figma, Canva, and Adobe Illustrator. As an award-winning Tech Head at our college fest, I've honed my skills in UI/UX and graphic design, delivering innovative and user-centric projects. Eager to bring my expertise and creativity to a reputable company, I am passionate about contributing to cutting-edge web solutions and thriving in a collaborative, forward-thinking environment.</p>
+        <div class="icon-box">
+            <!-- <i class='bx bxs-envelope'></i> -->
+            <i class='bx bxl-linkedin' onclick="location.href ='https://www.linkedin.com/in/ashwini-ojha-899030236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"></i>
+            <i class='bx bxl-github' onclick="location.href ='https://github.com/ashwiniojha143'"></i>
+            <!-- <i class='bx bxl-facebook'></i> -->
+        </div>
+        <button class="downloadBtn" onclick="location.href ='https://drive.google.com/file/d/1HNudF-lORp8caVaXJQbfWrOuKKEyVxml/view?usp=drivesdk'">Download CV</button>
+        <!-- <button class="contactBtn">Contact Me</button> -->
+    </div>
+    <div class="img-box">
+        <img src="Ashwini.png" draggable="false" alt="">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
